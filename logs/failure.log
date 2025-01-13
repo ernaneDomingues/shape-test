@@ -1,3 +1,84 @@
 2025-01-11 18:30:52.932453 - Error: This PolynomialFeatures instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
 2025-01-11 18:32:44.814778 - Error: This PolynomialFeatures instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
 2025-01-11 18:35:08.684171 - Error: This PolynomialFeatures instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-01-11 19:19:12,631 - ERROR - Erro: type object 'PipelineLoader' has no attribute 'load_config'
+2025-01-11 19:21:36,499 - ERROR - Erro: type object 'PipelineLoader' has no attribute 'load_config'
+2025-01-11 19:27:28,043 - ERROR - Erro: type object 'PipelineLoader' has no attribute 'load_config'
+2025-01-13 10:26:28,988 - ERROR - [Errno 2] No such file or directory: 'c:\\Users\\ernan\\Documents\\myProjects\\shape-test\\data/dataset.parquet/dataset.parque'
+2025-01-13 10:26:29,004 - ERROR - 'NoneType' object is not subscriptable
+2025-01-13 10:26:39,657 - ERROR - [Errno 2] No such file or directory: 'c:\\Users\\ernan\\Documents\\myProjects\\shape-test\\data/dataset.parquet/dataset.parque/dataset'
+2025-01-13 10:26:39,658 - ERROR - 'NoneType' object is not subscriptable
+2025-01-13 10:27:06,861 - ERROR - [Errno 2] No such file or directory: '/dataset.parquet'
+2025-01-13 10:27:06,861 - ERROR - 'NoneType' object is not subscriptable
+2025-01-13 10:27:13,744 - ERROR - [Errno 2] No such file or directory: '/dataset.parquet/dataset.parquet'
+2025-01-13 10:27:13,745 - ERROR - 'NoneType' object is not subscriptable
+2025-01-13 10:27:20,095 - ERROR - [Errno 2] No such file or directory: '/dataset.parquet/dataset.parquet/dataset.parquet'
+2025-01-13 10:27:20,096 - ERROR - 'NoneType' object is not subscriptable
+2025-01-13 16:55:43,645 - ERROR - This PolynomialFeatures instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+Traceback (most recent call last):
+  File "c:\Users\ernan\Documents\myProjects\shape-test\src\scoring.py", line 28, in score
+    transformed_data = pipeline.transform(data[required_columns])
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\site-packages\sklearn\utils\metaestimators.py", line 113, in <lambda>
+    out = lambda *args, **kwargs: self.fn(obj, *args, **kwargs)  # noqa
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\site-packages\sklearn\pipeline.py", line 647, in transform
+    Xt = transform.transform(Xt)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\site-packages\sklearn\preprocessing\_polynomial.py", line 367, in transform
+    check_is_fitted(self)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\site-packages\sklearn\utils\validation.py", line 1222, in check_is_fitted
+    raise NotFittedError(msg % {"name": type(estimator).__name__})
+sklearn.exceptions.NotFittedError: This PolynomialFeatures instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+
+2025-01-13 18:24:49,038 - ERROR - File is empty: data/empty.parquet
+Traceback (most recent call last):
+  File "c:\Users\ernan\Documents\myProjects\shape-test\src\data_loader.py", line 13, in load_data
+    return pd.read_parquet(file_path)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1081, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1085, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1140, in _execute_mock_call
+    raise effect
+pandas.errors.EmptyDataError
+
+2025-01-13 18:24:49,056 - ERROR - File not found: data/non_existent.parquet
+NoneType: None
+
+2025-01-13 18:24:49,060 - ERROR - Unexpected error: Unexpected error
+Traceback (most recent call last):
+  File "c:\Users\ernan\Documents\myProjects\shape-test\src\data_loader.py", line 13, in load_data
+    return pd.read_parquet(file_path)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1081, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1085, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1140, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+
+2025-01-13 18:28:48,391 - ERROR - File is empty: data/empty.parquet
+Traceback (most recent call last):
+  File "c:\Users\ernan\Documents\myProjects\shape-test\src\data_loader.py", line 13, in load_data
+    return pd.read_parquet(file_path)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1081, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1085, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1140, in _execute_mock_call
+    raise effect
+pandas.errors.EmptyDataError
+
+2025-01-13 18:28:48,394 - ERROR - File not found: data/non_existent.parquet
+NoneType: None
+
+2025-01-13 18:28:48,398 - ERROR - Unexpected error: Unexpected error
+Traceback (most recent call last):
+  File "c:\Users\ernan\Documents\myProjects\shape-test\src\data_loader.py", line 13, in load_data
+    return pd.read_parquet(file_path)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1081, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1085, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Users\ernan\anaconda3\envs\venv-shape-challenge\lib\unittest\mock.py", line 1140, in _execute_mock_call
+    raise effect
+Exception: Unexpected error
+
